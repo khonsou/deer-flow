@@ -1,5 +1,10 @@
 # AM Agent Fleet 定制分支（am-fleet/base）
 
+> **用途声明**：本 fork 仅为 [AMAgentFleet](https://github.com/khonsou/AMAgentFleet)
+> 提供**部署基线镜像来源**（compose 按 tag 构建网关镜像）。我们不向
+> bytedance/deer-flow 提交任何 PR / issue / 代码贡献；本 fork 的自定义
+> 内容全部在 `am-fleet/base` 分支，跟随上游演进只做 rebase，不回流。
+
 本仓库是 [bytedance/deer-flow](https://github.com/bytedance/deer-flow) 的 fork，作为
 [AMAgentFleet](https://github.com/khonsou/AMAgentFleet) 平台的执行底座（harness）。
 上游代码零修改——所有平台定制以**配置**形式落在本分支，不触碰 DeerFlow 源码
