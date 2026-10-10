@@ -31,6 +31,7 @@
 | `agents_api:` | `enabled: true` | ADR-0008 per-agent 配置层 |
 | `scheduler:` | `enabled: true` | YAML cron ↔ scheduled-tasks 对账 |
 | `run_events:` | `backend: db` | 消息持久化（默认 memory，重启即丢） |
+| `skill_evolution:` | `enabled: true`（上游默认 false） | agent 经 `skill_manage` 工具在对话中沉淀持久化技能（skills/custom/，静态扫描 + moderation 模型双闸） |
 
 ## 部署
 

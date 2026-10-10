@@ -2499,7 +2499,7 @@ agents_api:
 # ============================================================================
 # Allow the agent to autonomously create and improve skills in skills/custom/.
 skill_evolution:
-  enabled: false # Set to true to allow agent-managed writes under skills/custom
+  enabled: true # AM Fleet: 允许 agent 经 skill_manage 沉淀持久化技能（默认模型审查 + 静态扫描双闸）
   moderation_model_name: null # Model for LLM-based security scanning (null = use default model)
   security_fail_closed: true # Moderation model unavailable: true blocks all writes; false allows non-executable content with a warning (executable is always blocked)
 
